@@ -1,0 +1,78 @@
+:root {
+    --primary-color:rgba(252, 252, 129, 0.964);
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+#content{
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header>.tabs>button {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    border-style: none;
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+}
+
+main {
+    background: url('./pancake.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+main>.items {
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--primary-color);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    grid-row: 3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>.credits {
+    background-color: orange;
+    border-radius: 20px;
+    width: 600px;
+    height: 25px;    
+}
